@@ -1,6 +1,11 @@
 import express from "express";
 const app = express();
 
+app.get("/", (req, res) => {
+  res.json({
+    message: "swiggy api!",
+  });
+});
 app.get("/restaurants/list", (req, res) => {
   res.json({
     statusCode: 0,
